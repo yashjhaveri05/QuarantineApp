@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #fcbb08;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .primary-text {
+    color: #032fc2;
+  }
+
+  /* HEADER */
+#main-header {
+  border-bottom: 1px solid #032fc2;
+  color: black;
+}
+
+/* NAVBAR */
+#navbar {
+  text-transform: uppercase;
+}
+
+#navbar li {
+  display: inline;
+  padding-right: 20px;
+  list-style: none;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+#navbar li.current a,
+#navbar a:hover {
+  color: #032fc2;
+  border-bottom: 3px solid #032fc2;
+  padding-bottom: 3px;
+}
+
+  
+  h1 {
+    font-size: 45px;
+    color: black;
+  }
+  
+  canvas {
+    background: black;
+    display: block;
+    border-radius: 5px;
+    visibility: visible;
+  }
+
+  #home_btn {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+  }
+  
+  .btn {
+    cursor: pointer;
+    border: 0;
+    padding: 10px 20px;
+    background: black;
+    color: #0095dd;
+    border-radius: 5px;
+  }
+  
+  .btn:focus {
+    outline: 0;
+  }
+  
+  .btn:hover {
+    background: white;
+  }
+  
+  .btn:active {
+    transform: scale(0.98);
+  }
+  
+  .rules-btn {
+    position: absolute;
+    top: 10px;
+    left: 120px;
+    visibility: visible;
+  }
+  
+  .rules {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #333;
+    color: #fff;
+    min-height: 100vh;
+    width: 400px;
+    padding: 20px;
+    line-height: 1.5;
+    transform: translateX(-400px);
+    transition: transform 1s ease-in-out;
+  }
+  
+  .rules.show {
+    transform: translateX(0);
+  }
+
+  .selected {
+    border: 2px solid black;
+    background: #0095dd;
+    color: black;
+    text-decoration: underline;
+  }
+
+  .error{
+    visibility: hidden;
+  }
+
+  @media only screen and (max-width: 600px) {
+      .rules-btn {
+        visibility: hidden;
+      }
+      .error{
+        visibility: visible;
+        color: red;
+        transform: scale(0.7);
+      }
+      canvas{
+        visibility: hidden;
+      }
+      .levels{
+        visibility: hidden;
+      }
+      #home_btn {
+        transform: scale(0.7);
+        margin-right: none;
+        position: absolute;
+        top: 5px;
+        left: -1px;
+      }
+      .title {
+        transform: scale(0.7);
+      }
+    }
+

@@ -1,0 +1,77 @@
+#movies img, #movie img{
+    width:100%;
+  }
+  
+/* COMMON CLASSES */
+.primary-text {
+  color: #ee9836;
+}
+
+.primary-background {
+  background: #ee9836;
+}
+
+.white {
+  color: white;
+}
+
+body{
+  font-family: "Open-sans", sans-serif;
+  font-size: 17px;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.container {
+  margin: auto;
+}
+
+/* NAVBAR */
+#navbar {
+  border-bottom: 1px solid #ee9836;
+  margin-bottom: 20px;
+}
+
+#navbar li {
+  text-transform: uppercase;
+  display: inline;
+  padding-right: 20px;
+  list-style: none;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+#navbar li.current a,
+#navbar a:hover {
+  color: #ee9836;
+  border-bottom: 3px solid #ee9836;
+  padding-bottom: 3px;
+}
+
+#main-footer {
+  padding-top: 20px;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+}
+
+#movies_header{
+  text-align: center;
+  padding: 10px;
+}
+
+
+  @media(min-width:960px){
+    #movies .col-md-3 .well{
+      height: 390px;
+    }
+  
+    #movies .col-md-3 img{
+      height:240px;
+    }
+  }
